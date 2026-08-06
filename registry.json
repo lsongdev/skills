@@ -1,0 +1,629 @@
+{
+  "version": 1,
+  "skills": [
+    {
+      "id": "apple-reminders",
+      "name": "Apple Reminders",
+      "description": "Read, brief on, capture, and safely change tasks in the native Apple Reminders app through the on-device `apple-reminders` command. Use this skill whenever the user asks about their reminders, to-dos, or tasks — daily or weekly briefings, what is overdue or due today, unscheduled inbox items, adding or capturing a new task, rescheduling a due date, changing priority, moving a task to another list, marking things done, cleaning up a list, or finding a specific reminder. Trigger it even when the user never says \"reminder\": \"what's on my plate today\", \"add milk to my shopping list\", \"push that to Friday\", \"what did I miss this week\", \"clear out the done stuff\", \"브리핑\", \"할 일\", \"미리알림\", \"오늘 뭐 해야 해\", \"장바구니에 추가\", \"마감 지난 것\", \"提醒事项\", \"待办\", \"今天要做什么\", \"リマインダー\", \"タスク\". Also trigger when the user asks for something Reminders cannot do through this command (tags, sections, attachments, flags, subtasks, recurring reminders) so the limitation is reported accurately instead of guessed.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/apple-reminders/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "appstoreprice-hub",
+      "name": "appstoreprice-hub",
+      "description": "A skill for querying App Store app prices across regions worldwide, using data from appstoreprice.org. It uses the built-in browser (browser_use CLI) to call the website's native signing function directly in the page context, with no API key and no need to implement the signing algorithm yourself. It supports searching for apps by name, querying prices for one app across all regions, retrieving rankings of the cheapest regions, and browsing app lists with pagination. This skill must be triggered when the user mentions \"App Store prices,\" \"which region is cheapest,\" \"Turkey region price,\" \"appstoreprice,\" \"app price comparison,\" \"low-price App Store regions,\" \"which subscription region is the best value,\" or any scenario that requires cross-region price comparisons for iOS/macOS apps.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/appstoreprice-hub/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "asc-cli",
+      "name": "ASC CLI",
+      "description": "Use the asc (App Store Connect CLI) to manage iOS/macOS apps — TestFlight builds, beta groups, distribution, App Store submissions, release, user reviews, analytics reports, crash logs, and more. Triggers when user mentions \"asc\", \"TestFlight\", \"beta test\", \"app store review\", \"App Store Connect\", \"release v1.x\", \"public tester\", \"add build to test\", \"check crashes\", \"what's new\", \"store listing\", \"submit to app store review\", \"approve and release\", or any App Store Connect operation.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/asc-cli/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "bilibili-hub",
+      "name": "bilibili-hub",
+      "description": "A skill for reading and writing Bilibili data with Python + UV, using bilibili-api-python + aiohttp. It automatically obtains cookies through `browser_use get_cookies` for authentication, so no manual copying is required. Supports video details, subtitles, AI summaries, comments, user profiles, search, popular videos/rankings, following dynamics feed, favorites, Watch Later, viewing history, interactions (likes, coins, triple action), publishing and deleting dynamics, and more. When a user mentions \"Bilibili,\" \"bilibili,\" \"Bilibili videos,\" \"Bilibili popular,\" \"bilibili-hub,\" \"get Bilibili data,\" \"Bilibili subtitles,\" \"Bilibili comments,\" \"Bilibili favorites,\" \"Bilibili dynamics,\" or any scenario that requires programmatically reading or writing Bilibili content, this skill must be triggered.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/bilibili-hub/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "cloudflare-dns",
+      "name": "Cloudflare DNS Management",
+      "description": "Use the flarectl command-line tool to manage Cloudflare DNS records, including listing, adding, updating, and deleting DNS records, as well as querying zone information. This skill must be triggered whenever a user mentions \"Cloudflare DNS,\" \"CF DNS,\" \"add DNS record,\" \"delete DNS record,\" \"update DNS,\" \"view DNS records,\" \"cloudflare-dns,\" \"flarectl,\" or any scenario involving Cloudflare DNS management.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/cloudflare-dns/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "codex-image",
+      "name": "Codex Image Generation",
+      "description": "Generate images using OpenAI's Codex backend API with gpt-image-2 tool. Use when the user asks to generate images via Codex, ChatGPT image generation, or gpt-image-2. Triggers on \"codex image\", \"codex generate\", \"gpt-image\", \"chatgpt generate image\". Token is auto-fetched from chatgpt.com session — no manual token setup needed.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/codex-image/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "contact-vcard-extractor",
+      "name": "Contact vCard Extractor",
+      "description": "Extract contact information from text, chat logs, web pages, screenshots, business card photos, and QR codes/OCR results; clean names, phone numbers, email addresses, companies, job titles, addresses, and websites; generate vCard/.vcf files; and guide users to import them into iOS Contacts or share them with others. Trigger words include: extract contacts, save to contacts, generate vCard/.vcf, business card recognition, add contacts from images/screenshots/text, share contacts, and export contacts.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/contact-vcard-extractor/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-usage",
+      "name": "DeepSeek API Usage Query",
+      "description": "Check DeepSeek API usage (balance, this month's spending, token breakdown by model, daily breakdown, and cache hit rate). Access the DeepSeek Open Platform through browser_use, automatically log in, and export monthly data. Users must configure their DeepSeek account in local environment variables. Triggered when the user says \"check usage,\" \"view token consumption,\" \"check spending,\" \"how much balance is left,\" or \"how much was used today.\"",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/deepseek-usage/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "doubao-tts",
+      "name": "Doubao TTS Skill (V3)",
+      "description": "Use Doubao Text-to-Speech (Volcengine TTS) to convert text into audio files. When a user mentions \"Doubao TTS,\" \"Doubao Text-to-Speech,\" \"doubao tts,\" \"Volcengine TTS,\" \"volcengine tts,\" \"speech synthesis,\" \"text-to-speech,\" \"TTS,\" \"generate audio,\" \"read text aloud,\" or any scenario requiring the Doubao/Volcengine Text-to-Speech API, this skill must be triggered.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/doubao-tts/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "douyin-downloader",
+      "name": "Douyin Video Downloader",
+      "description": "Download Douyin (TikTok) videos from share links. Parse Douyin share text and links, download watermark-free videos, and transcribe audio to text using Volcano Engine ASR (Doubao Speech). Uses Python for iSH compatibility.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/douyin-downloader/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "exa-search",
+      "name": "Exa Search",
+      "description": "Search the web, read webpages as markdown, and run filtered web retrieval with Exa MCP. Use this skill whenever the user asks for current web information, web research, domain/date/category-filtered search, company or people lookup via search filters, or extracting clean page content from one or more URLs.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/exa-search/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "find-skills",
+      "name": "Find Skills",
+      "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/find-skills/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "free-tts",
+      "name": "Free TTS Skill",
+      "description": "Free text-to-speech (edge-tts), with no API key or registration required. Converts text to MP3 audio files. Trigger this skill when the user says \"read aloud,\" \"text-to-speech,\" \"TTS,\" \"generate audio,\" \"read it,\" \"read it out loud,\" \"say it,\" \"play it,\" or in any scenario where text needs to be converted to speech for playback.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/free-tts/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "fucai3d-latest",
+      "name": "Latest China Welfare Lottery 3D Draw Results",
+      "description": "Use when querying the most recent China Welfare Lottery 3D draw results. Suitable when the user wants to check the latest Welfare Lottery 3D draw, the most recent issue's numbers, the first Baidu search result for \"3d/Welfare Lottery 3D\", or quickly return the issue number, date, and numbers. Also suitable for recording historical results after the query and, based on the history, providing entertainment-only suggested numbers for the next draw, hot and cold number analysis, and multi-strategy number recommendations.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/fucai3d-latest/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "generative-ui",
+      "name": "Generative UI Skill",
+      "description": "In the current environment, automatically convert text descriptions into a single-file HTML generator similar to Claude Artifact, with unified support for outputs such as cards, tables, records, timelines, code blocks, and charts. Use this skill first when users mention these components or visualization pages.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/generative-ui/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "github-sync-helper",
+      "name": "1. Pull/refresh the repository",
+      "description": "General GitHub basic operations + automation for GitHub platform objects (Issues/Labels/Milestones/Releases/Actions) in the current environment. This skill must be triggered when the user mentions any basic Git/GitHub operation or workflow, including \"how to use GitHub,\" clone, init, remote, branch, commit, push, pull, fetch, merge, rebase, tag, release, issues, actions, labels, milestone, protected branches, fork, PR, sync to upstream, delete branches, restore after emptying a directory, push directly to main, or one-click sync.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/github-sync-helper/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "health-sleep-analysis",
+      "name": "Sleep Health Analysis Skill",
+      "description": "Analyze sleep health data from Apple HealthKit, including sleep stages (Deep/REM/Core/Awake), blood oxygen saturation (SpO2) during sleep, sleep duration trends, bedtime patterns, resting heart rate, and HRV. Use this skill whenever the user asks about sleep quality, sleep analysis, blood oxygen during sleep, sleep stages breakdown, sleep trends over time, heart rate, HRV, or any health data analysis involving sleep or cardiac health. Triggers on: \"sleep analysis\", \"blood oxygen\", \"sleep quality\", \"deep sleep\", \"REM sleep\", \"resting heart rate\", \"HRV\", \"heart health\", \"sleep analysis\", \"sleep quality\", \"blood oxygen\", \"deep sleep\", \"resting heart rate\", \"heart rate variability\" and similar in any language.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/health-sleep-analysis/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "hyperframes",
+      "name": "HyperFrames",
+      "description": "Create HyperFrames HTML video compositions — animations, title cards, overlays, captions, GSAP timelines, registry blocks/components, voiceovers, audio-reactive visuals, and scene transitions. Use when asked to build any HTML-based video content, write GSAP animations, add captions or subtitles, generate TTS narration, use registry blocks (hyperframes add), add transitions between scenes, or create any visual motion content. For CLI commands (init, lint, preview, render, transcribe, tts) and the rendering workflow (hf-render.py), see the hyperframes-cli skill.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/hyperframes/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "hyperframes-cli",
+      "name": "HyperFrames CLI",
+      "description": "HyperFrames CLI and the rendering workflow. Use for: (1) CLI commands — init, lint, preview, render, transcribe, tts, doctor; (2) iOS rendering via hf-render.py (set_viewport + browser_use + ffmpeg, no Chrome required); (3) Website-to-video workflow — capture a URL and produce a professional MP4 in 7 steps; (4) Preview/snapshot compositions at correct resolution. Trigger when user says render, init project, lint, transcribe audio, generate TTS, capture a website for video, or run any hyperframes CLI command.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/hyperframes-cli/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "korea-stock",
+      "name": "South Korean Stock Market Quote Lookup",
+      "description": "Check South Korean stock market quotes, including the KOSPI and KOSDAQ indices and their constituent stocks. Use the mobile version of Naver Finance (finance.naver.com); no login is required. Triggered when users say \"Korean stocks,\" \"South Korean stock market,\" \"KOSPI,\" \"KOSDAQ,\" \"Samsung Electronics,\" or \"SK Hynix.\"",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/korea-stock/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "luckin-coffee",
+      "name": "My Coffee 瑞幸咖啡下单助手",
+      "description": "Use when users ask to order Luckin Coffee, search Luckin stores/products, query pickup code/order status, cancel a Luckin order, or mention 瑞幸、luckin、咖啡、拿铁、美式、生椰拿铁、橙C美式、果茶、轻乳茶、果蔬茶、柠檬茶、点单、下单、点一杯、喝一杯、买一杯、门店、取餐码.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/luckin-coffee/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "maimai-hub",
+      "name": "maimai-hub",
+      "description": "Retrieves data from the Colleague Circle and Career Insights sections of Maimai (maimai.cn). Supports: posts from a specific company's Colleague Circle, the site-wide Career Insights feed (hot/latest/following), the Colleague Circle popularity ranking, and looking up a webcid by company name. This skill must be triggered whenever the user mentions \"Maimai,\" \"Colleague Circle,\" \"Career Insights,\" \"maimai,\" \"maimai-hub,\" or any scenario that requires reading Maimai content.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/maimai-hub/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "memos-api",
+      "name": "Memos API Skill",
+      "description": "Handles Memos API usage: crafting curl/python requests with Authorization Bearer tokens, paginating with pageSize/pageToken, using filter (AIP-160 syntax), updateMask updates, and mapping common endpoints (memo CRUD, attachments, activities, auth, identity providers). Trigger when user asks to call/inspect/troubleshoot Memos API, generate sample requests, or batch download memos. Warn to avoid printing tokens.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/memos-api/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "miya-desktop",
+      "name": "Miya Desktop",
+      "description": "Configure and troubleshoot Miya Desktop, its providers, profiles, agents, MCP servers, skills, channels, workspace, and local runtime files.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/miya-desktop/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "nano-banana",
+      "name": "Nano Banana — Image Generation Skill",
+      "description": "Generate or edit images using Google Nano Banana (Gemini image generation API). Trigger this skill whenever the user asks to generate an image, draw something, create artwork, edit a photo, or mentions \"nano banana\", \"nanobanana\", or any AI image generation/editing need — even if they don't explicitly mention Nano Banana. Proactively use this skill for any image creation or transformation request.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/nano-banana/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "notion-hub",
+      "name": "Notion Hub",
+      "description": "Read and write Notion data using Python + notion-client SDK. Authenticated via NOTION_API_KEY env var.\nSupports search, page CRUD (Markdown↔Blocks bidirectional conversion), database schema/query/create/add-row,\nblock-level operations (append/update/delete), and comments.\nTrigger this skill whenever the user mentions \"Notion\", \"notion\", \"notion-hub\", \"Notion page\",\n\"Notion database\", \"read Notion\", \"write Notion\", \"Notion API\", or any scenario requiring\nprogrammatic read/write access to Notion data.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/notion-hub/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "openstreetmap-marker",
+      "name": "OpenStreetMap Marker",
+      "description": "Generate a mobile-first, immersive, Amap(Gaode)-style custom landmark marker HTML map for travel itinerary planning, place showcasing, location sharing, etc. Built on Leaflet + OpenStreetMap, no API key required. Trigger when the user mentions \"annotate a map\", \"travel map\", \"itinerary map\", \"mark locations\", \"map display\", \"trip planning map\", \"OpenStreetMap marker\", or asks to generate a map page for a city/set of places. Includes a built-in GCJ-02 (Mars/China coordinate system used by Amap/Tencent/Baidu/Apple Maps search results in mainland China) to WGS-84 (Leaflet basemap coordinate system) conversion tool to avoid marker offset in mainland China.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/openstreetmap-marker/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "pdf-converter",
+      "name": "pdf-converter",
+      "description": "Convert Markdown, HTML, plain text, images, and pandoc-supported formats to PDF with CJK font rendering, half-width numbers, and emoji support. Use this skill whenever the user asks to convert a file to PDF, generate a PDF from Markdown or HTML, export a PDF, or run \"Convert to PDF\" / \"Generate PDF\" / \"Export PDF\".",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/pdf-converter/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "production-agent-public",
+      "name": "Claude Production Agent Skill",
+      "description": "Production-grade ReAct Agent skill. Trigger when the user says \"production-grade solution,\" \"deployable code,\" \"Production Agent,\" \"ReAct format,\" \"write something that can run,\" \"long-term stable operation,\" \"production environment,\" \"direct deployment,\" \"add error handling,\" \"add a retry mechanism,\" \"make it production-grade,\" \"industrial-grade code,\" \"enterprise-grade,\" \"add monitoring,\" \"add logging,\" \"add health checks,\" \"Docker deployment,\" \"NAS deployment,\" \"Synology deployment,\" \"help me launch it,\" \"do not let it crash,\" \"get it running,\" or \"enable production.\" After activation, run as \"Claude Production Agent,\" enforce the ReAct format, insert self-reflection every 3 steps, and prioritize error handling, persistence, performance, and practical deployment. See references/example-output.md for the complete example output.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/production-agent-public/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "qbt-hub",
+      "name": "qbt-hub",
+      "description": "Manage qBittorrent downloads via WebUI API (v5.0+). Use this skill whenever the user asks to add a torrent or magnet link, check download progress, search/filter tasks, delete tasks, set speed limits, manage tags/categories, or do anything related to qBittorrent. Trigger keywords: qBittorrent, qbt, torrent, magnet, download task, seeding, add torrent, qbt-hub.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/qbt-hub/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "quark-hub",
+      "name": "quark-hub",
+      "description": "Quark Cloud Drive file management tool. Supports login, directory listing, saving shared links to your drive, downloading files, and creating directories. Login now uses browser_use instead of the original project's Playwright. Trigger this skill when the user mentions \"Quark Cloud Drive\", \"Quark download\", \"Quark save\", \"quark\", or \"pan.quark.cn\".",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/quark-hub/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "reverse-dcf",
+      "name": "Reverse DCF: Deriving Market-Implied Expectations",
+      "description": "Reverse DCF (reverse discounted cash flow) valuation tool. Uses the market price to back-solve the market's implied growth rate expectations, replacing the common forward DCF routine of \"tweaking parameters to fit the conclusion.\" Suitable for mature companies with positive FCFF (A-shares, Hong Kong-listed stocks, and U.S.-listed stocks). Trigger when the user says \"reverse DCF,\" \"Reverse DCF,\" \"implied growth rate,\" \"market-implied expectations,\" \"price in,\" \"valuation back-solve,\" \"reverse valuation,\" \"run a DCF,\" or asks to \"calculate what the market is betting on.\" Not suitable for companies with negative FCFF (in that case, use a PS-implied revenue back-solve instead).",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/reverse-dcf/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "self-improving-agent",
+      "name": "Self-Improvement Skill",
+      "description": "Self-improvement logging and closed-loop feedback: Trigger when a command or operation fails, the user corrects you, outdated knowledge is identified, an external API fails, or a better reusable solution is found. Review historical learnings before important tasks. Avoid triggering during ordinary chat, for temporary mistakes that do not need to be logged, or when the user has explicitly said not to log.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/self-improving-agent/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "shortcut-share-file",
+      "name": "Share Files, \"Instant Share\" Shortcut",
+      "description": "Share iCloud Drive files using the iOS Shortcut \"Instant Share.\" Trigger this skill when the user mentions file-sharing actions such as \"share a file,\" \"transfer a file,\" \"send a file,\" \"share with xxx,\" \"share using a Shortcut,\" or \"send a file from the backup.\" Supports passing any file path under the iCloud Drive backup directory to the Shortcut.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/shortcut-share-file/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "skill-creator",
+      "name": "Skill Creator",
+      "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/skill-creator/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "spotify-hub",
+      "name": "Spotify Hub",
+      "description": "A skill that uses Python and spotipy to control Spotify playback. It supports play/pause, skipping tracks, volume, shuffle, searching for and playing songs, generating mixed playlists from keywords (for example, TikTok hits, a specific genre, or a specific artist), and viewing the current playback status and device list. This skill must be triggered whenever the user mentions \"Spotify,\" \"play music,\" \"skip a track,\" \"pause,\" \"search for a song,\" \"switch playlists,\" \"spotify-hub,\" or any scenario that requires controlling Spotify playback.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/spotify-hub/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "stock-fund-flow",
+      "name": "A-Share Sector Fund Flow Query",
+      "description": "Query capital flows for A-share industry sectors and concept sectors, including rankings of main-force net inflows/outflows. Use the East Money Data Center to directly retrieve complete JSON data from the page data component. Trigger this skill when the user says \"sector funds,\" \"fund flows,\" \"main-force net inflow,\" or \"sector rankings.\"",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/stock-fund-flow/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "stock-price",
+      "name": "Real-Time Stock, ETF, and Index Quotes",
+      "description": "Check real-time quotes for A-shares, Hong Kong stocks, ETFs, and indices (latest price, percentage change, trading volume, etc.). Uses the Tencent Quotes API (qt.gtimg.cn); no login or API key required. Triggers when a user says \"check stock prices,\" \"real-time quotes,\" \"ETF prices,\" \"stock quotes,\" or \"what is the market index?\"",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/stock-price/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "tavily-search",
+      "name": "Tavily Search Web Search",
+      "description": "Use the Tavily Search API to perform web searches. When users need to find the latest information, official documentation, news updates, tutorial links, policy changes, or any real-time facts, prioritize triggering this skill. Be sure to load this skill whenever information retrieval requests appear, such as \"look this up,\" \"latest,\" \"now,\" \"official website,\" \"literature/paper/course entry point,\" or \"is there a better solution?\" It supports searching web pages and retrieving summaries and original links. This skill should take precedence over pure model guessing to provide users with verifiable sources of information.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/tavily-search/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "tg-hub",
+      "name": "tg-hub",
+      "description": "A skill for reading and writing Telegram data with Python and UV. It depends only on Telethon and uses a local-first architecture: messages are synced to SQLite and then queried offline. On first use, you must log in from the terminal with a phone number verification code. After that, the session is persisted and you do not need to log in again. Supports syncing group and channel messages locally, keyword search, multi-keyword filtering, today's messages, recent messages, speaker rankings, timeline statistics, and more. This skill must be triggered whenever the user mentions \"Telegram\", \"TG\", \"Telegram\", \"tg-hub\", \"sync Telegram messages\", \"search TG groups\", \"Telegram keywords\", \"get TG messages\", or any scenario that requires programmatically reading or writing Telegram data.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/tg-hub/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "twitter-downloader",
+      "name": "Twitter Downloader Skill",
+      "description": "Download Twitter/X tweet text, images, GIFs, and videos via fxtwitter/vxtwitter, then return a tweet summary plus Markdown-formatted media links. Trigger when users share twitter.com/x.com links or ask to download/summarize tweet media.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/twitter-downloader/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "twitter-x-hub",
+      "name": "twitter-x-hub",
+      "description": "Skill for reading and writing Twitter/X data with Python + UV, with zero third-party dependencies (pure standard library), by directly passing the auth_token + ct0 cookies for authentication. In the current environment, cookies can be retrieved automatically with the browser_use tool by navigating to x.com and then using the get_cookies action, with no manual copying required. Supports scraping the home timeline, following list, bookmarks (including bookmark folders), search, user profiles, user tweets, likes, tweet details (single tweet or with replies), List timelines, followers/following lists, and write operations such as posting, deleting, liking, retweeting, and bookmarking. This skill must be triggered when the user mentions \"scraping Twitter data,\" \"get X tweets,\" \"Twitter timeline,\" \"X bookmarks,\" \"search tweets,\" \"twitter-x-hub,\" \"request Twitter with cookies,\" \"Twitter GraphQL,\" or any scenario that requires programmatic reading or writing of Twitter/X data.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/twitter-x-hub/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "us-stock",
+      "name": "U.S. Stock Market Quote Lookup",
+      "description": "Real-time U.S. stock market quotes. The three major indices (Dow/S&P 500/Nasdaq) + the Magnificent 7 (NVDA/AAPL/MSFT/GOOGL/AMZN/META/TSLA) + the VIX fear index + 0DTE Gamma status analysis. Triggered when users say \"U.S. stocks,\" \"check U.S. stocks,\" \"U.S. stock market,\" \"Magnificent 7,\" \"VIX,\" \"fear index,\" \"S&P,\" \"Nasdaq,\" or \"Dow.\"",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/us-stock/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "vercel-react-best-practices",
+      "name": "Vercel React Best Practices",
+      "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/vercel-react-best-practices/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "web-content-extractor",
+      "name": "Web Content Extractor",
+      "description": "Clean and extract the main body content from a webpage URL. Use this skill whenever the user asks to extract, scrape, or read the main article, text, or content from a webpage, especially if they mention wanting clean Markdown or text without ads and navigation.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/web-content-extractor/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "web-design-guidelines",
+      "name": "Web Interface Guidelines",
+      "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/web-design-guidelines/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "web-search",
+      "name": "web-search",
+      "description": "General web search skill that uses browser automation with multiple search engines and selects the priority chain based on search intent. Supports: Perplexity, Metaso AI, Google, Bing, Brave, DuckDuckGo, Baidu, Sogou, Tavily. Trigger when the user mentions \"web search,\" \"search for it,\" \"search this for me,\" \"look it up online,\" \"search engine,\" or needs real-time information from the internet.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/web-search/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "weibo-hub",
+      "name": "weibo-hub",
+      "description": "A skill for reading and writing Weibo data with Python + UV. It depends only on httpx and uses `browser_use get_cookies` to automatically retrieve cookies and complete authentication, with no manual copying required. It supports trending searches, popular feeds, following feeds, keyword search, Weibo post details/comments/reposts, user profiles/posts/following/follower lists, and more. This skill must be triggered whenever the user mentions \"Weibo\", \"weibo\", \"weibo-hub\", \"Weibo trending searches\", \"scraping Weibo\", \"searching Weibo\", \"Weibo comments\", \"Weibo users\", or any scenario that requires programmatic reading or writing of Weibo data.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/weibo-hub/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "whenpeak",
+      "name": "WhenPeak — performance timing from sleep",
+      "description": "Predict when a person's brain works best from their sleep, using the WhenPeak performance-intelligence API, and turn it into concrete scheduling advice. Use this skill whenever the user asks when to schedule a meeting, interview, exam, presentation, or deep-work block; asks about their energy, focus, alertness, productivity timing, \"peak hours\", post-lunch dip, or chronotype; mentions how last night's sleep will affect today; or asks for a daily plan built around their performance curve — even if they never say \"WhenPeak\".",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/whenpeak/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "xianyu-hub",
+      "name": "Xianyu Search Skill (xianyu-hub)",
+      "description": "Xianyu (Goofish) secondhand item search and lookup skill. Supports searching for items, checking price trends, filtering by city, price range, and sort order, viewing item details, managing favorites, and checking orders and listed items. Supports outputting web links and fleamarket:// direct links to the app. Built-in \"Keyword Enhancement\": When search results are empty or very limited, the skill automatically adds alternative keywords from the same category and retries the search, significantly improving the search hit rate. This skill must be triggered whenever a user mentions \"Xianyu,\" \"Xianyu,\" \"secondhand,\" \"goofish,\" \"search how much xx costs,\" \"find xx items,\" \"can't find it,\" or in any scenario where they need to check Xianyu item prices or search for secondhand items.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/xianyu-hub/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "xiaohongshu-hub",
+      "name": "xiaohongshu-hub",
+      "description": "Skill for reading and writing Xiaohongshu (XHS) data using Python + UV. It depends only on httpx + pycryptodome, automatically retrieves cookies via `browser_use get_cookies` to complete authentication, and requires no manual copying. It supports searching notes, users, and topics; reading note details and comments; recommendation feeds; trending lists; social actions (follow/favorite); interactions (like/comment/reply); notification queries; creator note management; and more. This skill must be triggered when the user mentions \"Xiaohongshu,\" \"XHS,\" \"scraping Xiaohongshu,\" \"searching Xiaohongshu notes,\" \"Xiaohongshu comments,\" \"xiaohongshu-hub,\" \"reading Xiaohongshu data,\" \"Xiaohongshu Cookie,\" or any scenario that requires programmatically reading or writing Xiaohongshu content.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/xiaohongshu-hub/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "ytmusic-hub",
+      "name": "ytmusic-hub",
+      "description": "Read and write YouTube Music data using Python + ytmusicapi, authenticated via browser cookies obtained automatically with browser_use get_cookies — no manual copying required. Supports fetching playlists, liked songs, playlist details, creating/editing/deleting playlists, searching and adding songs, recommendations, charts, and lyrics. Trigger this skill whenever the user mentions \"YouTube Music\", \"YT Music\", \"ytmusic\", \"ytmusic-hub\", \"get YouTube playlists\", \"create YouTube Music playlist\", \"my liked songs\", \"YTM playlist\", or any scenario requiring programmatic read/write access to YouTube Music data.",
+      "source": "lsongdev/skills",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/lsongdev/skills/master/ytmusic-hub/SKILL.md"
+        }
+      ]
+    }
+  ]
+}
